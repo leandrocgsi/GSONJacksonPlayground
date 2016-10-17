@@ -1,4 +1,4 @@
-package br.com.uol.vericad.jackson;
+package br.com.erudio.jackson;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package br.com.uol.vericad.pojo;
+package br.com.erudio.pojo;
 
 public class User {
 

@@ -1,4 +1,4 @@
-package br.com.uol.vericad.gson;
+package br.com.erudio.gson;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

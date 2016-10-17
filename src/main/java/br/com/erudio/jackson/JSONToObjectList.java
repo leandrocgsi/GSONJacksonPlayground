@@ -1,4 +1,4 @@
-package br.com.uol.vericad.jackson;
+package br.com.erudio.jackson;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.type.TypeFactory;
 
-import br.com.uol.vericad.pojo.User;
+import br.com.erudio.pojo.User;
 
 public class JSONToObjectList {
 	

@@ -1,4 +1,4 @@
-package br.com.uol.vericad.gson;
+package br.com.erudio.gson;
 
 import java.util.ArrayList;
 import java.util.HashMap;

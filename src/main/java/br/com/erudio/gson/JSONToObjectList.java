@@ -1,10 +1,10 @@
-package br.com.uol.vericad.gson;
+package br.com.erudio.gson;
 
 import java.util.List;
 
-import br.com.uol.vericad.pojo.User;
-
 import com.google.gson.Gson;
+
+import br.com.erudio.pojo.User;
 
 public class JSONToObjectList {
 	
