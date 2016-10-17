@@ -1,9 +1,9 @@
-package br.com.uol.vericad;
+package br.com.erudio;
 
 import org.junit.Test;
 
-import br.com.uol.vericad.jackson.CreateJSONObject;
-import br.com.uol.vericad.pojo.User;
+import br.com.erudio.jackson.CreateJSONObject;
+import br.com.erudio.pojo.User;
 
 
 public class CreateJSONObjectTest {

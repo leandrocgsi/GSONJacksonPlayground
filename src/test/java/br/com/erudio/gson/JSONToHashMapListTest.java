@@ -1,9 +1,11 @@
-package br.com.uol.vericad.gson;
+package br.com.erudio.gson;
 
 import java.util.HashMap;
 import java.util.List;
 
 import org.junit.Test;
+
+import br.com.erudio.gson.JSONToHashMapList;
 
 public class JSONToHashMapListTest {
 

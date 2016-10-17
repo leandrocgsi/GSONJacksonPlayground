@@ -1,10 +1,11 @@
-package br.com.uol.vericad.jackson;
+package br.com.erudio.jackson;
 
 import java.util.List;
 
 import org.junit.Test;
 
-import br.com.uol.vericad.pojo.User;
+import br.com.erudio.jackson.JSONToObjectList;
+import br.com.erudio.pojo.User;
 
 public class JSONToObjectListTest {
 

@@ -1,6 +1,8 @@
-package br.com.uol.vericad.jackson;
+package br.com.erudio.jackson;
 
 import org.junit.Test;
+
+import br.com.erudio.jackson.PrettyPrintJSON;
 
 public class PrettyPrintJSONTest {
 

@@ -1,8 +1,8 @@
-package br.com.uol.vericad.gson;
+package br.com.erudio.gson;
 
 import org.junit.Test;
 
-import br.com.uol.vericad.jackson.JSONNodeToArrayNode;
+import br.com.erudio.jackson.JSONNodeToArrayNode;
 
 public class JSONNodeToArrayNodeTest {
 

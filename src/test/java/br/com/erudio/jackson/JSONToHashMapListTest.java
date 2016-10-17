@@ -1,9 +1,11 @@
-package br.com.uol.vericad.jackson;
+package br.com.erudio.jackson;
 
 import java.util.HashMap;
 import java.util.List;
 
 import org.junit.Test;
+
+import br.com.erudio.jackson.JSONToHashMapList;
 
 public class JSONToHashMapListTest {
 
