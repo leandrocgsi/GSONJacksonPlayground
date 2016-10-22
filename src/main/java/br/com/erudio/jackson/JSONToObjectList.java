@@ -3,11 +3,12 @@ package br.com.erudio.jackson;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.type.TypeFactory;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import br.com.erudio.pojo.User;
 
@@ -17,7 +18,7 @@ public class JSONToObjectList {
 		ObjectMapper mapper = new ObjectMapper();
 		List<User> list = new ArrayList<User>();
 		try {
-			list = mapper.readValue(jsonString, TypeFactory.collectionType(List.class, User.class));
+			list = mapper.readValue(jsonString, new TypeReference<Map<String, Object>>(){});
 		} catch (JsonParseException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {

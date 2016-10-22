@@ -2,10 +2,9 @@ package br.com.erudio.jackson;
 
 import java.io.IOException;
 
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.SerializationConfig.Feature;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class PrettyPrintJSON {
 	
@@ -14,8 +13,7 @@ public class PrettyPrintJSON {
 		String formatedJSON = "";
 		try {
 			Object json = mapper.readValue(jsonString, Object.class);
-			mapper.configure(Feature.INDENT_OUTPUT, true);
-			formatedJSON = mapper.writeValueAsString(json);
+			formatedJSON = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(json);
 		} catch (JsonParseException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {

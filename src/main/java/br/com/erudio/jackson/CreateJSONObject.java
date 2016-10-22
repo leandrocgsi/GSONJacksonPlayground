@@ -1,8 +1,7 @@
 package br.com.erudio.jackson;
 import java.io.IOException;
 
-import org.codehaus.jackson.map.ObjectMapper;
-
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class CreateJSONObject {
 

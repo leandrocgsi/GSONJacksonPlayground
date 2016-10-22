@@ -10,7 +10,7 @@ public class PrettyPrintJSONTest {
 
 	@Test
 	public void test() {
-		String jsonString = "{\"age\":29,\"name\":\"mkyong\"}";
+		String jsonString = "{\"age\":31,\"name\":\"Leandro\"}";
 		System.out.println(prettyPrintJSON.toPrettyFormat(jsonString));;
 	}
 }

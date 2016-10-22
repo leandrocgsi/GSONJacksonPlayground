@@ -4,11 +4,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.type.TypeFactory;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JSONToHashMapList {
 	
@@ -16,7 +17,7 @@ public class JSONToHashMapList {
 		ObjectMapper mapper = new ObjectMapper();
 		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
 		try {
-			list = mapper.readValue(jsonString, TypeFactory.collectionType(List.class, HashMap.class));
+			list = mapper.readValue(jsonString, new TypeReference<Map<String, Object>>(){});
 		} catch (JsonParseException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
