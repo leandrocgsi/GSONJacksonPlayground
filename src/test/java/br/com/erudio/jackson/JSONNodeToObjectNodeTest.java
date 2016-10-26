@@ -15,7 +15,7 @@ public class JSONNodeToObjectNodeTest {
 	@Test
 	public void test() throws JsonProcessingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
-		JsonNode jsonNode = mapper.readTree("{\"address\":{\"zip\":98040, \"city\":\"Mercer Island\"}}");
+		JsonNode jsonNode = mapper.readTree("{\"address\":{\"zip\":38400-000, \"city\":\"Uberlandia\"}}");
 		ObjectNode address = jsonNodeToObjectNode.getAsJsonObject(jsonNode);
 		JsonNode jsonNode2 = address.get("address");
 		if (address != null && jsonNode2.has("zip") && jsonNode2.has("city")) {
